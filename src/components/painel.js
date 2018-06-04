@@ -4,7 +4,7 @@ function Painel(props) {
   console.log(props);
   return (
     <div>
-      <h1>My React App!</h1>
+      <h1>Fluxo das Notícias</h1>
       <div>{props.children}</div>
     </div>
   );

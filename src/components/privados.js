@@ -9,7 +9,7 @@ function ListaPrivados(props) {
   ));
 
   return (
-    <div>
+    <div className="container-fluid">
       <h1>Privados</h1>
       <ul>{renderList}</ul>
     </div>
