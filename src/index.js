@@ -1,10 +1,20 @@
 import React from "react";
 import ReactDOM from "react-dom";
+
+// Bootstrap
 import "jquery";
 import "popper.js";
+
+import "./styles/scss/custom.scss";
 import "bootstrap";
 
-import styles from "./styles/main.css";
+// End Bootstrap
+
+// Main CSS file
+
+import styles from "./styles/css/main.css";
+
+//
 
 import Painel from "./components/painel";
 
@@ -25,7 +35,7 @@ const materias = [
     senadoAgora: true,
     chamada: "Pedro I criou Supremo com poderes esvaziados",
     dataPublicacao: "01/03/2018 - 13h43",
-    privado: false,
+    privado: true,
     revisado: true
   },
   {

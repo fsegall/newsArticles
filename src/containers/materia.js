@@ -11,7 +11,7 @@ const renderList = materias => {
 class Materia extends Component {
   render() {
     return (
-      <div>
+      <div className="pt-3 mb-2 border border-secondary border-white border-bottom-0">
         <ul>{renderList}</ul>
       </div>
     );

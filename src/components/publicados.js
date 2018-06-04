@@ -5,15 +5,15 @@ function ListaPublicados(props) {
     materias => materias.dataPublicacao
   );
   const renderList = publishList.map(materia => (
-    <li key={materia.id}>{`${materia.chamada} -- escrita por: ${
-      materia.autor
-    }`}</li>
+    <li className="list-group-item list-group-item-action" key={materia.id}>{`${
+      materia.chamada
+    } -- escrita por: ${materia.autor}`}</li>
   ));
 
   return (
-    <div>
-      <h1>Publicados</h1>
-      <ul>{renderList}</ul>
+    <div className="pt-3 mb-2 border border-secondary border-white border-bottom-0">
+      <h1 className="text-center">Publicados</h1>
+      <ul className="list-group mb-5">{renderList}</ul>
     </div>
   );
 }
