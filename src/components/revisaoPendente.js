@@ -1,19 +1,15 @@
 import React from "react";
+import ItemMateria from "./itemMateria";
+import ContainerLista from "./containerLista";
 
 function ListaRevisar(props) {
+  const status = props.status[1];
   const reviewList = props.materias.filter(materias => !materias.revisado);
   const renderList = reviewList.map(materia => (
-    <li className="list-group-item list-group-item-action" key={materia.id}>{`${
-      materia.chamada
-    } -- escrita por: ${materia.autor}`}</li>
+    <ItemMateria key={materia.id} materia={materia} />
   ));
 
-  return (
-    <div className="pt-3 mb-2 border border-secondary border-white border-bottom-0">
-      <h1 className="text-center">Revisão Pendente</h1>
-      <ul className="list-group mb-5">{renderList}</ul>
-    </div>
-  );
+  return <ContainerLista status={status} renderList={renderList} />;
 }
 
 export default ListaRevisar;

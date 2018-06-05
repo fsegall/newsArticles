@@ -8,13 +8,11 @@ import "popper.js";
 import "./styles/scss/custom.scss";
 import "bootstrap";
 
-// End Bootstrap
-
 // Main CSS file
 
 import styles from "./styles/css/main.css";
 
-//
+//Componentes
 
 import Painel from "./components/painel";
 
@@ -27,7 +25,9 @@ import ListaPublicados from "./components/publicados";
 import ListaRevisar from "./components/revisaoPendente";
 
 import ListaLiberados from "./components/liberados";
+import ContainerLista from "./components/containerLista";
 
+// Dados de teste
 const materias = [
   {
     id: 0,
@@ -46,7 +46,7 @@ const materias = [
       "CDR aprova desconto de energia elétrica para sistemas de consumo de água do rio São Francisco",
     dataPublicacao: null,
     privado: true,
-    revisado: false
+    revisado: true
   },
   {
     id: 2,
@@ -60,17 +60,21 @@ const materias = [
   }
 ];
 
+const statusMateria = [
+  "Privados",
+  "Revisão Pendente",
+  "Liberados",
+  "Publicados"
+];
+
+//App
+
 ReactDOM.render(
   <Painel>
-    <ListaMateria materias={materias} />
-
-    <ListaPrivados materias={materias} />
-
-    <ListaRevisar materias={materias} />
-
-    <ListaLiberados materias={materias} />
-
-    <ListaPublicados materias={materias} />
+    <ListaPrivados materias={materias} status={statusMateria} />
+    <ListaRevisar materias={materias} status={statusMateria} />
+    <ListaLiberados materias={materias} status={statusMateria} />
+    <ListaPublicados materias={materias} status={statusMateria} />
   </Painel>,
   document.getElementById("app")
 );
