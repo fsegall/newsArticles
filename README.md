@@ -1,9 +1,12 @@
-# React Webpack Starter
-> This is a boilerplate for React 16 & Webpack 4. It includes webpack-dev-server and a build script
+# newsApp - Senado
+
+> This is built on top of a boilerplate for React 16 & Webpack 4. It includes webpack-dev-server and a build script
+> Brad Traversy (Thank you!)
+> [Traversy Media](http://www.traversymedia.com)
 
 ## Quick Start
 
-``` bash
+```bash
 # Install dependencies
 npm install
 
@@ -13,17 +16,6 @@ npm start
 # Build for production
 npm run build
 ```
-
-## App Info
-
-### Author
-
-Brad Traversy
-[Traversy Media](http://www.traversymedia.com)
-
-### Version
-
-1.0.0
 
 ### License
 
