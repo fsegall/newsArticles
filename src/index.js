@@ -33,7 +33,8 @@ const materias = [
     id: 0,
     autor: "João Silva",
     senadoAgora: true,
-    chamada: "Pedro I criou Supremo com poderes esvaziados",
+    chamada:
+      "Pedro I criou Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus faucibus nec neque vitae fermentum. Nunc dignissim orci magna, in efficitur eros volutpat et.",
     dataPublicacao: "01/03/2018 - 13h43",
     privado: true,
     revisado: true
@@ -43,7 +44,7 @@ const materias = [
     autor: "Joana Silva",
     senadoAgora: false,
     chamada:
-      "CDR aprova desconto de energia elétrica para sistemas de consumo de água do rio São Francisco",
+      "CDR aprova Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus faucibus nec neque vitae fermentum. Nunc dignissim orci magna, in efficitur eros volutpat et.",
     dataPublicacao: null,
     privado: true,
     revisado: true
@@ -53,7 +54,7 @@ const materias = [
     autor: "José Silva",
     senadoAgora: false,
     chamada:
-      "Senado aprova ampliação de prazo para elaboração de Plano de Mobilidade Urbana",
+      "Senado aprova Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus faucibus nec neque vitae fermentum. Nunc dignissim orci magna, in efficitur eros volutpat et.",
     dataPublicacao: null,
     privado: true,
     revisado: false

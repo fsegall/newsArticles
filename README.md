@@ -1,4 +1,4 @@
-# newsApp - Senado
+# newsApp
 
 > This is built on top of a boilerplate for React 16 & Webpack 4. It includes webpack-dev-server and a build script
 > Brad Traversy (Thank you!)
