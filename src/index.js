@@ -10,8 +10,6 @@ import "bootstrap";
 
 // Main CSS file
 
-import styles from "./styles/css/main.css";
-
 //Componentes
 
 import Painel from "./components/painel";

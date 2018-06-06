@@ -4,10 +4,13 @@ const MiniCssExtractPlugin = require("mini-css-extract-plugin");
 const devMode = process.env.NODE_ENV !== "production";
 
 module.exports = {
-  entry: "./src/index.js",
+  entry: {
+    main: './src/index.js',
+    styles: './src/styles/main.scss'
+  },
   output: {
     path: path.join(__dirname, "/dist"),
-    filename: "index_bundle.js"
+    filename: "[name].js"
   },
   module: {
     rules: [
@@ -33,7 +36,6 @@ module.exports = {
         use: [
           devMode ? "style-loader" : MiniCssExtractPlugin.loader,
           "css-loader",
-          "postcss-loader",
           "sass-loader"
         ]
       }
