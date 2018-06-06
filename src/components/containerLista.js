@@ -5,6 +5,7 @@ function ContainerLista(props) {
   return (
     <div className="pt-3 mb-2 border border-secondary border-white border-bottom-0">
       <h1>{props.status}</h1>
+      <i class="fab fa-angellist" />
       <ul className="list-group mb-5">{props.renderList}</ul>
     </div>
   );

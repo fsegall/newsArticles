@@ -19,6 +19,16 @@ module.exports = {
         }
       },
       {
+        test: /\.woff2?(\?v=[0-9]\.[0-9]\.[0-9])?$/,
+        // Limiting the size of the woff fonts breaks font-awesome ONLY for the extract text plugin
+        // loader: "url?limit=10000"
+        loader: "url-loader"
+      },
+      {
+        test: /\.(ttf|eot|svg)(\?[\s\S]+)?$/,
+        loader: "file-loader"
+      },
+      {
         test: /\.s?[ac]ss$/,
         use: [
           devMode ? "style-loader" : MiniCssExtractPlugin.loader,
@@ -27,6 +37,13 @@ module.exports = {
           "sass-loader"
         ]
       }
+      /* {
+        test: /\.(jpe?g|png|gif|svg)$/i,
+        use: [
+          'file-loader?name=images/[name].[ext]',
+          'image-webpack-loader?bypassOnDebug'
+        ]
+      } */
     ]
   },
   plugins: [
