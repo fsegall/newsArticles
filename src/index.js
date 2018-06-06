@@ -16,8 +16,6 @@ import styles from "./styles/css/main.css";
 
 import Painel from "./components/painel";
 
-import ListaMateria from "./containers/listaMaterias";
-
 import ListaPrivados from "./components/privados";
 
 import ListaPublicados from "./components/publicados";

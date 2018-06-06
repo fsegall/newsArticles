@@ -1,15 +1,13 @@
 import React from "react";
 import ItemMateria from "./itemMateria";
 import ContainerLista from "./containerLista";
+import { renderList } from "./renderLista";
 
+// Render list Components
 function ListaLiberados(props) {
   const status = props.status[2];
-  const reviewList = props.materias.filter(materias => materias.revisado);
-  const renderList = reviewList.map(materia => (
-    <ItemMateria key={materia.id} materia={materia} />
-  ));
-
-  return <ContainerLista status={status} renderList={renderList} />;
+  const reviewedList = props.materias.filter(materias => materias.revisado);
+  return renderList(status, reviewedList);
 }
 
 export default ListaLiberados;

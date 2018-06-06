@@ -1,15 +1,13 @@
 import React from "react";
 import ItemMateria from "./itemMateria";
 import ContainerLista from "./containerLista";
+import { renderList } from "./renderLista";
 
+// Render list Components
 function ListaRevisar(props) {
   const status = props.status[1];
   const reviewList = props.materias.filter(materias => !materias.revisado);
-  const renderList = reviewList.map(materia => (
-    <ItemMateria key={materia.id} materia={materia} />
-  ));
-
-  return <ContainerLista status={status} renderList={renderList} />;
+  return renderList(status, reviewList);
 }
 
 export default ListaRevisar;

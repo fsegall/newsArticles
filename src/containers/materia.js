@@ -14,9 +14,9 @@ class Materia extends Component {
       },
       contentStatus: {
         dataPublicacao: null,
-        privado: true,
+        private: true,
         inReview: false,
-        revisado: false
+        revised: false
       }
     };
   }
