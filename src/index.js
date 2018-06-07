@@ -68,6 +68,7 @@ const statusMateria = [
 
 ReactDOM.render(
   <Painel>
+    <i class="fas fa-circle fa-stack-2x"></i>
     <ListaPrivados materias={materias} status={statusMateria} />
     <ListaRevisar materias={materias} status={statusMateria} />
     <ListaLiberados materias={materias} status={statusMateria} />

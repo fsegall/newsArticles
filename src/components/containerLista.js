@@ -1,5 +1,5 @@
 import React from "react";
-import addressBook from "~@fortawesome/fontawesome-free-solid/faAddressBook";
+
 function ContainerLista(props) {
   console.log(props);
   return (
