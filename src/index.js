@@ -42,7 +42,7 @@ const materias = [
     chamada:
       "CDR aprova Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus faucibus nec neque vitae fermentum. Nunc dignissim orci magna, in efficitur eros volutpat et.",
     dataPublicacao: null,
-    privado: true,
+    privado: false,
     revisado: true
   },
   {
