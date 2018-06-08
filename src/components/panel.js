@@ -1,13 +1,13 @@
 import React from "react";
 
-function Painel(props) {
-  console.log(props);
+function Panel(props) {
+  
   return (
     <div className="container-fluid">
-      <h1>Fluxo das Notícias</h1>
+      <h1>News Workflow</h1>
       <div>{props.children}</div>
     </div>
   );
 }
 
-export default Painel;
+export default Panel;

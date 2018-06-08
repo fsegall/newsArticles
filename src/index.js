@@ -8,71 +8,61 @@ import "popper.js";
 import "./styles/scss/custom.scss";
 import "bootstrap";
 
-// Main CSS file
+//Components
 
-//Componentes
+import Panel from "./components/panel";
 
-import Painel from "./components/painel";
+import Lists from './components/lists';
 
-import ListaPrivados from "./components/privados";
-
-import ListaPublicados from "./components/publicados";
-
-import ListaRevisar from "./components/revisaoPendente";
-
-import ListaLiberados from "./components/liberados";
-import ContainerLista from "./components/containerLista";
-
-// Dados de teste
-const materias = [
+// Test Data
+const articles = [
   {
     id: 0,
-    autor: "João Silva",
+    author: "João Silva",
     senadoAgora: true,
-    chamada:
+    headline:
       "Pedro I criou Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus faucibus nec neque vitae fermentum. Nunc dignissim orci magna, in efficitur eros volutpat et.",
-    dataPublicacao: "01/03/2018 - 13h43",
-    privado: true,
-    revisado: true
+    publishDate: "01/03/2018 - 13h43",
+    private: true,
+    reviewed: true
   },
   {
     id: 1,
-    autor: "Joana Silva",
+    author: "Joana Silva",
     senadoAgora: false,
-    chamada:
+    headline:
       "CDR aprova Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus faucibus nec neque vitae fermentum. Nunc dignissim orci magna, in efficitur eros volutpat et.",
-    dataPublicacao: null,
-    privado: false,
-    revisado: true
+    publishDate: null,
+    private: false,
+    reviewed: true
   },
   {
     id: 2,
-    autor: "José Silva",
+    author: "José Silva",
     senadoAgora: false,
-    chamada:
+    headline:
       "Senado aprova Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus faucibus nec neque vitae fermentum. Nunc dignissim orci magna, in efficitur eros volutpat et.",
-    dataPublicacao: null,
-    privado: true,
-    revisado: false
+    publishDate: null,
+    private: true,
+    reviewed: false
   }
 ];
 
-const statusMateria = [
-  "Privados",
-  "Revisão Pendente",
-  "Liberados",
-  "Publicados"
+const articleStatus = [
+  "Private",
+  "Not Reviewed",
+  "Reviewed",
+  "Published"
 ];
 
 //App
 
 ReactDOM.render(
-  <Painel>
-    <i class="fas fa-circle fa-stack-2x"></i>
-    <ListaPrivados materias={materias} status={statusMateria} />
-    <ListaRevisar materias={materias} status={statusMateria} />
-    <ListaLiberados materias={materias} status={statusMateria} />
-    <ListaPublicados materias={materias} status={statusMateria} />
-  </Painel>,
+  <Panel>
+    <div className="ItIsaFont">
+    <i class="fab fa-earlybirds"></i>
+    </div>
+    <Lists articles={articles} status={articleStatus} />
+  </Panel>,
   document.getElementById("app")
 );

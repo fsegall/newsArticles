@@ -1,6 +1,6 @@
 import React from "react";
 
-function ContainerLista(props) {
+function ListContent(props) {
   console.log(props);
   return (
     <div className="pt-3 mb-2 border border-secondary border-white border-bottom-0">
@@ -11,4 +11,4 @@ function ContainerLista(props) {
   );
 }
 
-export default ContainerLista;
+export default ListContent;

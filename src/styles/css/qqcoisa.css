@@ -6,3 +6,8 @@ body {
 h1 {
   color: gray;
 }
+
+.ItIsaFont {
+  font-size: 2rem;
+  text-align: center;
+}
