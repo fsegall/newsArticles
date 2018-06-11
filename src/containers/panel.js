@@ -14,7 +14,7 @@ class Panel extends Component {
   render() {
     return (
       <div className="container-fluid">
-        <h1>Fluxo das Notícias</h1>
+        <h1>News Workflow</h1>
         <div>{this.props.children}</div>
         <Lists articles={this.state.articles} status={this.state.status} />
       </div>
