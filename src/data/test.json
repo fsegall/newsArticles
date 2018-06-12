@@ -68,5 +68,5 @@
       "reviewed": false
     }
   ],
-  "status": ["Private", "Not Reviewed", "Reviewed", "Published"]
+  "workStatus": ["Private", "Not Reviewed", "Reviewed", "Published"]
 }
