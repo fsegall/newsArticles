@@ -17,7 +17,7 @@ class Panel extends Component {
       .then(response => {
         this.setState({
           articles: JSON.parse(response.articles),
-          workStatus: JSON.parse(response.status)
+          workStatus: JSON.parse(response.workStatus)
         });
       })
       .catch(err => console.log(err));
