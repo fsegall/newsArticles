@@ -10,12 +10,10 @@ import "bootstrap";
 
 //Components
 
-import Panel from "./components/panel";
-
-import Lists from './components/lists';
+import Panel from "./containers/panel";
 
 // Test Data
-const articles = [
+/* const articles = [
   {
     id: 0,
     author: "João Silva",
@@ -46,23 +44,22 @@ const articles = [
     private: true,
     reviewed: false
   }
-];
+]; */
 
-const articleStatus = [
+/* const articleStatus = [
   "Private",
   "Not Reviewed",
   "Reviewed",
   "Published"
-];
+]; */
 
 //App
 
 ReactDOM.render(
   <Panel>
     <div className="ItIsaFont">
-    <i class="fab fa-earlybirds"></i>
+      <i class="fab fa-earlybirds" />
     </div>
-    <Lists articles={articles} status={articleStatus} />
   </Panel>,
   document.getElementById("app")
 );
