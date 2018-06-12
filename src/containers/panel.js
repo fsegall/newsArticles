@@ -7,10 +7,14 @@ class Panel extends Component {
   constructor(props) {
     super(props);
     this.state = {
-      articles, // JSON request to backend here
-      status // JSON request to backend here
+      articles,
+      status
     };
   }
+
+  // Lifecyclehook to update state
+  // JSON request to backend goes here
+
   render() {
     return (
       <div className="container-fluid">

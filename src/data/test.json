@@ -6,8 +6,20 @@
       "senadoAgora": true,
       "headline":
         "Pedro I criou Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus faucibus nec neque vitae fermentum. Nunc dignissim orci magna, in efficitur eros volutpat et.",
+      "article-images": "",
+      "Locked": false,
+      "icons": {
+        "image": "",
+        "video": "",
+        "audio": "",
+        "infografico": "",
+        "infomateria": "",
+        "eCidadania": "",
+        "home": "fas fa-home"
+      },
+      "home": false,
       "publishDate": "01/03/2018 - 13h43",
-      "private": true,
+      "private": false,
       "reviewed": true
     },
     {
@@ -16,6 +28,19 @@
       "senadoAgora": false,
       "headline":
         "CDR aprova Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus faucibus nec neque vitae fermentum. Nunc dignissim orci magna, in efficitur eros volutpat et.",
+      "article-images": "",
+      "Locked": false,
+      "icons": {
+        "image": "fas fa-image",
+        "image-caption": "fas fa-comment-alt",
+        "video": "fas fa-video",
+        "audio": "fas fa-volume-up",
+        "infografico": "fas fa-chart-bar",
+        "infomateria": "fas fa-chart-area",
+        "eCidadania": "fas fa-book",
+        "home": "fas fa-home"
+      },
+      "home": false,
       "publishDate": null,
       "private": false,
       "reviewed": true
@@ -26,6 +51,18 @@
       "senadoAgora": false,
       "headline":
         "Senado aprova Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus faucibus nec neque vitae fermentum. Nunc dignissim orci magna, in efficitur eros volutpat et.",
+      "article-images": "",
+      "Locked": true,
+      "icons": {
+        "image": "",
+        "video": "",
+        "audio": "",
+        "infografico": "",
+        "infomateria": "",
+        "eCidadania": "",
+        "home": "fas fa-home"
+      },
+      "home": true,
       "publishDate": null,
       "private": true,
       "reviewed": false
