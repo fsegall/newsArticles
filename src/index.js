@@ -11,6 +11,7 @@ import "bootstrap";
 //Components
 
 import Panel from "./containers/panel";
+import StatusBar from "./components/statusBar";
 
 // Test Data
 /* const articles = [
@@ -55,11 +56,4 @@ import Panel from "./containers/panel";
 
 //App
 
-ReactDOM.render(
-  <Panel>
-    <div className="ItIsaFont">
-      <i class="fab fa-earlybirds" />
-    </div>
-  </Panel>,
-  document.getElementById("app")
-);
+ReactDOM.render(<Panel />, document.getElementById("app"));
