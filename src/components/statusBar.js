@@ -10,26 +10,35 @@ function StatusBar(props) {
 
   return (
     <div>
-      <div className="text-right d-flex justify-content-end flex-wrap">
-        <button className="btn btn-secondary mx-1">My Articles</button>
-        <button className="btn btn-secondary">Authors</button>
+      <div className="text-right">
+        <button className="btn btn-secondary m-1">My Articles</button>
+        <button className="btn btn-secondary m-1">Authors</button>
       </div>
-      <div className="d-flex flex-wrap justify-content-start text-white font-bold text-center">
-        <div className="d-flex flex-wrap text-white font-bold text-center">
-          <div className="bg-secondary mt-1 box">
-            <p className="p-2">{`Total ${articlesTotal}`}</p>
+      <div className="row">
+        <div className="d-flex flex-wrap text-white font-bold text-center col-md-6">
+          <div className="bg-secondary box p-2">
+            <p className="">Total</p>
+            <div className="">{articlesTotal}</div>
           </div>
-          <div className="bg-danger mt-1 box">
-            <p className="p-2">{`Private ${props.articlesPrivate}`}</p>
+
+          <div className="bg-danger box p-2">
+            <p className="">Private</p>
+            <div>{props.articlesPrivate}</div>
           </div>
-          <div className="bg-warning mt-1 box">
-            <p className="p-2">{`Not Reviewed ${props.articlesNotReviewed}`}</p>
+
+          <div className="bg-warning box p-2">
+            <p className="">Edit</p>
+            <div className="">{props.articlesNotReviewed}</div>
           </div>
-          <div className="bg-success mt-1 box">
-            <p className="p-2">{`Reviewed ${props.articlesReviewed}`}</p>
+
+          <div className="bg-success box p-2">
+            <p className="">Reviewed</p>
+            <div className="">{props.articlesReviewed}</div>
           </div>
-          <div className="bg-primary mt-1 box">
-            <p className="p-2">{`Published ${props.articlesPublished}`}</p>
+
+          <div className="bg-primary box p-2">
+            <p className="">Published</p>
+            <div className="">{props.articlesPublished}</div>
           </div>
         </div>
       </div>
