@@ -11,8 +11,8 @@ function ArticleItem(props) {
       <span className="badge badge-primary float-right">
         {article.publishDate}
       </span>
-      <div>{article.headline}</div>
-      <div className="mt-1">{`Escrita por: ${article.author}`}</div>
+      <div className="m-2">{article.headline}</div>
+      <strong className="ml-2">{`Escrita por: ${article.author}`}</strong>
       <Locked locked={article.Locked} />
     </li>
   );
