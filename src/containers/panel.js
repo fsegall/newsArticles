@@ -2,6 +2,7 @@ import React, { Component } from "react";
 import { articles, workStatus } from "../data/test.json";
 
 import Lists from "../components/lists";
+import Legenda from "../components/legenda";
 
 class Panel extends Component {
   constructor(props) {
@@ -39,6 +40,7 @@ class Panel extends Component {
           articles={this.state.articles}
           workStatus={this.state.workStatus}
         />
+        <Legenda />
       </div>
     );
   }
