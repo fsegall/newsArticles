@@ -19,3 +19,8 @@ h1 {
 .font-bold {
   font-weight: bold;
 }
+
+.box {
+  flex: 1;
+  flex-wrap: wrap;
+}
