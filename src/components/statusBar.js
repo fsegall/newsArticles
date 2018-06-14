@@ -13,7 +13,7 @@ function StatusBar(props) {
       <div className="text-right">
         <button className="btn btn-secondary m-1">My Articles</button>
         <button className="btn btn-secondary m-1">Authors</button>
-        <button className="btn btn-secondary m-1">Locked</button>
+        <button className="btn btn-warning m-1">Locked</button>
       </div>
       <div className="row">
         <div className="d-flex flex-wrap text-white font-bold text-center col-md-6">
