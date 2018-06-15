@@ -24,3 +24,7 @@ h1 {
   flex: 1;
   flex-wrap: wrap;
 }
+
+.unbutton {
+  border: none;
+}

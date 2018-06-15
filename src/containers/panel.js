@@ -31,7 +31,7 @@ class Panel extends Component {
   render() {
     return (
       <div className="container-fluid">
-        <div className="ItIsaFont d-inline">
+        <div className="ItIsaFont d-inline text-secondary">
           <i class="fab fa-earlybirds" />
         </div>
         <h1 className="d-inline ml-2">News Workflow</h1>
