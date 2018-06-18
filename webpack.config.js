@@ -5,8 +5,8 @@ const devMode = process.env.NODE_ENV !== "production";
 
 module.exports = {
   entry: {
-    main: './src/index.js',
-    styles: './src/styles/main.scss'
+    main: "./src/index.js",
+    styles: "./src/styles/main.scss"
   },
   output: {
     path: path.join(__dirname, "/dist"),
@@ -38,14 +38,14 @@ module.exports = {
           "css-loader",
           "sass-loader"
         ]
-      }
-      /* {
+      },
+      {
         test: /\.(jpe?g|png|gif|svg)$/i,
         use: [
-          'file-loader?name=images/[name].[ext]',
-          'image-webpack-loader?bypassOnDebug'
+          "file-loader"
+          /*  "image-webpack-loader?bypassOnDebug" */
         ]
-      } */
+      }
     ]
   },
   plugins: [

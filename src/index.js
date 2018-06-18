@@ -6,60 +6,14 @@ import "jquery";
 import "popper.js";
 
 import "./styles/scss/custom.scss";
+
 import "bootstrap";
 
 //Components
 
 import Panel from "./containers/panel";
-
-// Test Data
-/* const articles = [
-  {
-    id: 0,
-    author: "João Silva",
-    senadoAgora: true,
-    headline:
-      "Pedro I criou Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus faucibus nec neque vitae fermentum. Nunc dignissim orci magna, in efficitur eros volutpat et.",
-    publishDate: "01/03/2018 - 13h43",
-    private: true,
-    reviewed: true
-  },
-  {
-    id: 1,
-    author: "Joana Silva",
-    senadoAgora: false,
-    headline:
-      "CDR aprova Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus faucibus nec neque vitae fermentum. Nunc dignissim orci magna, in efficitur eros volutpat et.",
-    publishDate: null,
-    private: false,
-    reviewed: true
-  },
-  {
-    id: 2,
-    author: "José Silva",
-    senadoAgora: false,
-    headline:
-      "Senado aprova Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus faucibus nec neque vitae fermentum. Nunc dignissim orci magna, in efficitur eros volutpat et.",
-    publishDate: null,
-    private: true,
-    reviewed: false
-  }
-]; */
-
-/* const articleStatus = [
-  "Private",
-  "Not Reviewed",
-  "Reviewed",
-  "Published"
-]; */
+import StatusBar from "./components/statusBar";
 
 //App
 
-ReactDOM.render(
-  <Panel>
-    <div className="ItIsaFont">
-      <i class="fab fa-earlybirds" />
-    </div>
-  </Panel>,
-  document.getElementById("app")
-);
+ReactDOM.render(<Panel />, document.getElementById("app"));

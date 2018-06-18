@@ -10,6 +10,7 @@
       "Locked": false,
       "icons": {
         "image": "",
+        "image-caption": "fas fa-comment-alt",
         "video": "",
         "audio": "",
         "infografico": "",
@@ -19,7 +20,7 @@
       },
       "home": false,
       "publishDate": "01/03/2018 - 13h43",
-      "private": false,
+      "private": true,
       "reviewed": true
     },
     {
@@ -55,7 +56,8 @@
       "Locked": true,
       "icons": {
         "image": "",
-        "video": "",
+        "image-caption": "fas fa-comment-alt",
+        "video": "fas fa-video",
         "audio": "fas fa-volume-up",
         "infografico": "",
         "infomateria": "",
