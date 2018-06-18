@@ -1,8 +1,14 @@
 import React, { Component } from "react";
 import { articles, workStatus } from "../data/test.json";
 
+import { BrowserRouter as Router, Route, Link, Switch } from "react-router-dom";
+
 import Lists from "../components/lists";
 import Legenda from "../components/legenda";
+import SecondaryNav from "../components/secondaryNavBar";
+import MyArticles from "../components/myArticles";
+import Authors from "../components/authors";
+import Locked from "../components/locked";
 
 class Panel extends Component {
   constructor(props) {
@@ -29,19 +35,56 @@ class Panel extends Component {
   }
 
   render() {
+    const articles = this.state.articles;
+    const workStatus = this.state.workStatus;
     return (
-      <div className="container-fluid">
-        <div className="ItIsaFont d-inline text-secondary">
-          <i class="fab fa-earlybirds" />
+      <Router>
+        <div>
+          <SecondaryNav />
+          <Switch>
+            <Route
+              exact
+              path="/"
+              render={props => (
+                <Lists {...props} articles={articles} workStatus={workStatus} />
+              )}
+            />
+
+            <Route
+              path="/me"
+              render={props => (
+                <MyArticles
+                  {...props}
+                  articles={articles.filter(
+                    article => article.author === "João Silva"
+                  )}
+                />
+              )}
+            />
+
+            <Route
+              path="/authors"
+              render={props => (
+                <Authors
+                  {...props}
+                  articles={articles.filter(article => article.author)}
+                />
+              )}
+            />
+
+            <Route
+              path="/locked"
+              render={props => (
+                <Locked
+                  {...props}
+                  articles={articles.filter(article => article.Locked)}
+                />
+              )}
+            />
+          </Switch>
+          <Legenda />
         </div>
-        <h1 className="d-inline ml-2">News Workflow</h1>
-        <div>{this.props.children}</div>
-        <Lists
-          articles={this.state.articles}
-          workStatus={this.state.workStatus}
-        />
-        <Legenda />
-      </div>
+      </Router>
     );
   }
 }

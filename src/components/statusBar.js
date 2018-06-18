@@ -32,11 +32,11 @@ class StatusBar extends Component {
 
     return (
       <div>
-        <div className="text-right">
+        {/*         <div className="text-right">
           <button className="btn btn-default m-1">My Articles</button>
           <button className="btn btn-default m-1">Authors</button>
           <button className="btn btn-warning m-1">Locked</button>
-        </div>
+        </div> */}
 
         <div className="row">
           <div className="d-flex flex-wrap text-white font-bold text-center col-md-6">

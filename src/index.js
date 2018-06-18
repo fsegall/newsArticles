@@ -12,7 +12,6 @@ import "bootstrap";
 //Components
 
 import Panel from "./containers/panel";
-import StatusBar from "./components/statusBar";
 
 //App
 

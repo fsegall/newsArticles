@@ -29,3 +29,16 @@ h1 {
 .unbutton {
   border: none;
 }
+
+.home a {
+  color: gray;
+  text-decoration: none;
+}
+
+.links a:hover {
+  text-decoration: none;
+}
+
+.links a {
+  color: white;
+}

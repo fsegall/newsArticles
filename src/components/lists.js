@@ -25,23 +25,6 @@ function Lists(props) {
 
   const articlesPublished = publishList.length;
 
-  /*   function ArticleNumbers (articlesPrivate, articlesNotReviewed, articlesReviewed, articlesPublished) {
-
-    this. articlesPrivate = articlesPrivate;
-    this.articlesNotReviewed = articlesNotReviewed;
-    this.articlesReviewed = articlesReviewed;
-    this.articlesPublished = articlesPublished;
-
-    this.articlesTotal =
-    this.articlesPrivate +
-    this.articlesNotReviewed +
-    this.articlesReviewed +
-    this.articlesPublished;
-
-  } */
-
-  /* props.numbers(articleNumbers);
- */
   return (
     <div>
       <StatusBar
