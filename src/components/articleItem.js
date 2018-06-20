@@ -16,7 +16,7 @@ function ArticleItem(props) {
       </span>
       <div className="m-2">{article.headline}</div>
       <strong className="ml-2">{`Escrita por: ${article.author}`}</strong>
-      <LockedIcon locked={article.Locked} />
+      <LockedIcon locked={article.locker.locked} user={article.locker.user} />
     </li>
   );
 }

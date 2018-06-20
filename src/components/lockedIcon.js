@@ -26,7 +26,7 @@ class LockedIcon extends Component {
               this.state.tipVisible ? "" : "invisible"
             }`}
           >
-            John Silva is editing this content.
+            {`${this.props.user} is editing this content.`}
           </span>
           <button
             className="unbutton"

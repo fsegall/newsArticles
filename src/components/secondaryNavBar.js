@@ -16,7 +16,7 @@ const SecondaryNavBar = () => {
             <Link to="/me">My Articles</Link>
           </li>
           <li className="btn btn-default m-1">
-            <Link to="/authors">Authors</Link>
+            <Link to="/staff">Staff</Link>
           </li>
           <li className="btn btn-warning m-1">
             <Link to="/locked">Locked</Link>

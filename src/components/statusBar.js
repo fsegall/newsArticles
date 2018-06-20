@@ -39,7 +39,7 @@ class StatusBar extends Component {
         </div> */}
 
         <div className="row">
-          <div className="d-flex flex-wrap text-white font-bold text-center col-md-6">
+          <div className="d-flex text-white font-bold text-center col-md-6">
             <div className="bg-secondary box p-2">
               <div className={!hidden ? "" : "d-none"}>
                 <p className="">Total</p>

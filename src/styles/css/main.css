@@ -42,3 +42,9 @@ h1 {
 .links a {
   color: white;
 }
+
+.avatar {
+  width: 100px;
+  height: 100px;
+  margin: auto;
+}
