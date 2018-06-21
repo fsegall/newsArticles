@@ -4,7 +4,7 @@ function Legenda(props) {
   return (
     <div className="row">
       <div className="col-md-6">
-        <h2 className="text-secondary">Legenda:</h2>
+        <h2 className="text-secondary text-right">Legenda:</h2>
       </div>
       <div className="col-md-3 mb-2">
         <ul className="list-group text-secondary">

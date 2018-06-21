@@ -1,4 +1,5 @@
 import React, { Component } from "react";
+import { hot } from "react-hot-loader";
 import { articles, workStatus } from "../data/test.json";
 
 import { BrowserRouter as Router, Route, Link, Switch } from "react-router-dom";
@@ -74,12 +75,7 @@ class Panel extends Component {
 
               <Route
                 path="/staff"
-                render={props => (
-                  <Staff
-                    {...props}
-                    articles={articles.filter(article => article.author)}
-                  />
-                )}
+                render={props => <Staff {...props} articles={articles} />}
               />
 
               <Route
@@ -99,4 +95,4 @@ class Panel extends Component {
   }
 }
 
-export default Panel;
+export default hot(module)(Panel);

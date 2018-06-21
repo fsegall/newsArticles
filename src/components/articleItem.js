@@ -14,7 +14,9 @@ function ArticleItem(props) {
       <span className={classAnimated}>
         <span className="">{article.publishDate}</span>
       </span>
-      <div className="m-2">{article.headline}</div>
+      <div className="m-2">
+        <a>{article.headline}</a>
+      </div>
       <strong className="ml-2">{`Escrita por: ${article.author}`}</strong>
       <LockedIcon locked={article.locker.locked} user={article.locker.user} />
     </li>
