@@ -20,10 +20,53 @@ h1 {
   font-weight: bold;
 }
 
-.box {
+.box-animation {
   flex: 1;
   flex-wrap: wrap;
   border-radius: 0.3em;
+  animation-name: bar;
+  animation-duration: 2s;
+}
+
+box {
+  flex: 1;
+  flex-wrap: wrap;
+  border-radius: 0.3em;
+}
+
+/* .box-reverse {
+  flex: 1;
+  flex-wrap: wrap;
+  border-radius: 0.3em;
+  animation-name: bar;
+  animation-duration: 2s;
+  animation-direction: reverse;
+} */
+
+.fade {
+  animation-name: fade-in;
+  animation-duration: 1s;
+  animation-delay: 0.3s;
+  animation-fill-mode: forwards;
+  /*animation-direction: reverse;*/
+}
+
+@keyframes bar {
+  from {
+    height: 1rem;
+  }
+  to {
+    height: 5rem;
+  }
+}
+
+@keyframes fade-in {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 100;
+  }
 }
 
 .unbutton {
