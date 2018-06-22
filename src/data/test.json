@@ -7,7 +7,10 @@
       "headline":
         "Pedro I criou Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus faucibus nec neque vitae fermentum. Nunc dignissim orci magna, in efficitur eros volutpat et.",
       "article-images": "",
-      "Locked": false,
+      "locker": {
+        "locked": false,
+        "user": "Pedro"
+      },
       "icons": {
         "image": "",
         "image-caption": "fas fa-comment-alt",
@@ -21,7 +24,7 @@
       "home": false,
       "publishDate": "01/03/2018 - 13h43",
       "private": true,
-      "reviewed": true
+      "reviewed": false
     },
     {
       "id": 1,
@@ -30,7 +33,10 @@
       "headline":
         "CDR aprova Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus faucibus nec neque vitae fermentum. Nunc dignissim orci magna, in efficitur eros volutpat et.",
       "article-images": "",
-      "Locked": false,
+      "locker": {
+        "locked": false,
+        "user": "Pedro"
+      },
       "icons": {
         "image": "fas fa-image",
         "image-caption": "fas fa-comment-alt",
@@ -53,14 +59,17 @@
       "headline":
         "Senado aprova Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus faucibus nec neque vitae fermentum. Nunc dignissim orci magna, in efficitur eros volutpat et.",
       "article-images": "",
-      "Locked": true,
+      "locker": {
+        "locked": true,
+        "user": "Felipe"
+      },
       "icons": {
         "image": "",
         "image-caption": "fas fa-comment-alt",
         "video": "fas fa-video",
         "audio": "fas fa-volume-up",
         "infografico": "",
-        "infomateria": "",
+        "infomateria": "fas fa-chart-area",
         "eCidadania": "",
         "home": "fas fa-home"
       },

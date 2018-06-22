@@ -1,7 +1,17 @@
 body {
   background-color: rgb(228, 228, 228);
-  font-family: sans-serif;
+  font-family: Galatia SIL;
 }
+
+@font-face {
+  font-family: Galatia SIL;
+  src: url(../../fonts/GalSILR.ttf);
+}
+
+/* @font-face {
+  font-family: Galatia SIL;
+  src: url(../../fonts/GalSILB.ttf);
+} */
 
 h1 {
   color: gray;
@@ -16,16 +26,74 @@ h1 {
   margin: 1rem;
 }
 
-.font-bold {
-  font-weight: bold;
+.box-animation {
+  flex: 1;
+  flex-wrap: wrap;
+  border-radius: 0.3em;
+  animation-name: bar;
+  animation-duration: 2s;
 }
 
-.box {
+box {
   flex: 1;
   flex-wrap: wrap;
   border-radius: 0.3em;
 }
 
+/* .box-reverse {
+  flex: 1;
+  flex-wrap: wrap;
+  border-radius: 0.3em;
+  animation-name: bar;
+  animation-duration: 2s;
+  animation-direction: reverse;
+} */
+
+.fade {
+  animation-name: fade-in;
+  animation-duration: 1s;
+  animation-delay: 0.3s;
+  animation-fill-mode: forwards;
+  /*animation-direction: reverse;*/
+}
+
+@keyframes bar {
+  from {
+    height: 1rem;
+  }
+  to {
+    height: 5rem;
+  }
+}
+
+@keyframes fade-in {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 100;
+  }
+}
+
 .unbutton {
   border: none;
+}
+
+.home a {
+  color: gray;
+  text-decoration: none;
+}
+
+.links a:hover {
+  text-decoration: none;
+}
+
+.links a {
+  color: white;
+}
+
+.avatar {
+  width: 100px;
+  height: 100px;
+  margin: auto;
 }

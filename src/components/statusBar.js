@@ -1,5 +1,7 @@
 import React, { Component } from "react";
 
+//Renders a colored status bar for news articles with list item counters
+
 class StatusBar extends Component {
   constructor(props) {
     super(props);
@@ -32,45 +34,61 @@ class StatusBar extends Component {
 
     return (
       <div>
-        <div className="text-right">
-          <button className="btn btn-default m-1">My Articles</button>
-          <button className="btn btn-default m-1">Authors</button>
-          <button className="btn btn-warning m-1">Locked</button>
-        </div>
-
         <div className="row">
-          <div className="d-flex flex-wrap text-white font-bold text-center col-md-6">
-            <div className="bg-secondary box p-2">
-              <div className={!hidden ? "" : "d-none"}>
-                <p className="">Total</p>
+          <div className="d-flex text-white text-center col-md-6">
+            <div
+              className={
+                !hidden
+                  ? "bg-secondary box-animation p-2"
+                  : "bg-secondary box px-5"
+              }
+            >
+              <div className={!hidden ? "fade" : "d-none"}>
+                <p className="bg-dark rounded">Total</p>
                 <div className="">{articlesTotal}</div>
               </div>
             </div>
 
-            <div className="bg-danger box p-2">
-              <div className={!hidden ? "" : "d-none"}>
-                <p className="">Private</p>
+            <div
+              className={
+                !hidden ? "bg-danger box-animation p-2" : "bg-danger box px-5"
+              }
+            >
+              <div className={!hidden ? "fade" : "d-none"}>
+                <p className="bg-secondary rounded">Private</p>
                 <div>{this.props.articlesPrivate}</div>
               </div>
             </div>
 
-            <div className="bg-warning box p-2">
-              <div className={!hidden ? "" : "d-none"}>
-                <p className="">Edit</p>
+            <div
+              className={
+                !hidden ? "bg-warning box-animation p-2" : "bg-warning box px-5"
+              }
+            >
+              <div className={!hidden ? "fade" : "d-none"}>
+                <p className="bg-secondary rounded">Edit</p>
                 <div className="">{this.props.articlesNotReviewed}</div>
               </div>
             </div>
 
-            <div className="bg-success box p-2">
-              <div className={!hidden ? "" : "d-none"}>
-                <p className="">Reviewed</p>
+            <div
+              className={
+                !hidden ? "bg-success box-animation p-2" : "bg-success box px-5"
+              }
+            >
+              <div className={!hidden ? "fade" : "d-none"}>
+                <p className="bg-secondary rounded">Reviewed</p>
                 <div className="">{this.props.articlesReviewed}</div>
               </div>
             </div>
 
-            <div className="bg-primary box p-2">
-              <div className={!hidden ? "" : "d-none"}>
-                <p className="">Published</p>
+            <div
+              className={
+                !hidden ? "bg-primary box-animation p-2" : "bg-primary box px-5"
+              }
+            >
+              <div className={!hidden ? "fade" : "d-none"}>
+                <p className="bg-secondary rounded">Published</p>
                 <div className="">{this.props.articlesPublished}</div>
               </div>
             </div>

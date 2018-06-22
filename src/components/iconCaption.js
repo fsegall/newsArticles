@@ -1,10 +1,12 @@
 import React from "react";
 
-function Legenda(props) {
+// Identifies all icons used in articles
+
+const IconCaption = props => {
   return (
     <div className="row">
-      <div className="col-md-6 text-right">
-        <h2 className="text-secondary">Legenda:</h2>
+      <div className="col-md-6">
+        <h2 className="text-secondary text-right">Caption:</h2>
       </div>
       <div className="col-md-3 mb-2">
         <ul className="list-group text-secondary">
@@ -48,6 +50,6 @@ function Legenda(props) {
       </div>
     </div>
   );
-}
+};
 
-export default Legenda;
+export default IconCaption;

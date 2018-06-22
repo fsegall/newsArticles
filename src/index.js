@@ -1,4 +1,5 @@
 import React from "react";
+
 import ReactDOM from "react-dom";
 
 // Bootstrap
@@ -11,9 +12,8 @@ import "bootstrap";
 
 //Components
 
-import Panel from "./containers/panel";
-import StatusBar from "./components/statusBar";
+import App from "./containers/App";
 
 //App
 
-ReactDOM.render(<Panel />, document.getElementById("app"));
+ReactDOM.render(<App />, document.getElementById("app"));
