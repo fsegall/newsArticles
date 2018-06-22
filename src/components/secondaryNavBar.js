@@ -1,6 +1,8 @@
 import React from "react";
 import { Link } from "react-router-dom";
 
+// Button to go back to Workflow and secondary pages navigation
+
 const SecondaryNavBar = () => {
   return (
     <div className="container-fluid">

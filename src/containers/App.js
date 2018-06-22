@@ -11,7 +11,9 @@ import MyArticles from "../components/myArticles";
 import Staff from "../components/staff";
 import Locked from "../components/locked";
 
-class Panel extends Component {
+// Main component with route to all pages
+
+class App extends Component {
   constructor(props) {
     super(props);
     this.state = {
@@ -95,4 +97,4 @@ class Panel extends Component {
   }
 }
 
-export default hot(module)(Panel);
+export default hot(module)(App);

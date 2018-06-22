@@ -12,8 +12,8 @@ import "bootstrap";
 
 //Components
 
-import Panel from "./containers/panel";
+import App from "./containers/App";
 
 //App
 
-ReactDOM.render(<Panel />, document.getElementById("app"));
+ReactDOM.render(<App />, document.getElementById("app"));

@@ -2,7 +2,9 @@ import React from "react";
 import { renderList } from "./renderList";
 import StatusBar from "./statusBar";
 
-function Lists(props) {
+// Renders all lists of articles calling renderList helper function and the StatusBar with list item counters
+
+const Lists = props => {
   const statusPrivate = props.workStatus[0];
   const privateList = props.articles.filter(article => article.private);
 
@@ -39,6 +41,6 @@ function Lists(props) {
       {renderList(statusPublish, publishList)}
     </div>
   );
-}
+};
 
 export default Lists;

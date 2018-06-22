@@ -2,7 +2,9 @@ import React from "react";
 import Icons from "./icons";
 import LockedIcon from "./lockedIcon";
 
-function ArticleItem(props) {
+//Renders dynamic content of each article item
+
+const ArticleItem = props => {
   const article = props.article;
   const classAnimated = article.publishDate
     ? "badge badge-primary float-right animated slideInRight"
@@ -21,6 +23,6 @@ function ArticleItem(props) {
       <LockedIcon locked={article.locker.locked} user={article.locker.user} />
     </li>
   );
-}
+};
 
 export default ArticleItem;

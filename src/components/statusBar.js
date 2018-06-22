@@ -1,5 +1,7 @@
 import React, { Component } from "react";
 
+//Renders a colored status bar for news articles with list counters
+
 class StatusBar extends Component {
   constructor(props) {
     super(props);
@@ -32,12 +34,6 @@ class StatusBar extends Component {
 
     return (
       <div>
-        {/*         <div className="text-right">
-          <button className="btn btn-default m-1">My Articles</button>
-          <button className="btn btn-default m-1">Authors</button>
-          <button className="btn btn-warning m-1">Locked</button>
-        </div> */}
-
         <div className="row">
           <div className="d-flex text-white font-bold text-center col-md-6">
             <div className="bg-secondary box p-2">

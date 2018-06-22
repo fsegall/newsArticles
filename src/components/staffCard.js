@@ -1,6 +1,8 @@
 import React from "react";
 import src from "../img/avatar.png";
 
+// Renders each user card
+
 const StaffCard = props => {
   return (
     <div className="col-md-3 mt-3">

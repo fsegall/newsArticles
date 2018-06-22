@@ -1,5 +1,7 @@
 import React, { Component } from "react";
 
+// Creates the locked/unlocked state for articles with tooltip
+
 class LockedIcon extends Component {
   constructor(props) {
     super(props);

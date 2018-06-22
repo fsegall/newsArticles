@@ -1,6 +1,8 @@
 import React from "react";
 
-function Legenda(props) {
+// Identifies all icons used in articles
+
+const Legenda = props => {
   return (
     <div className="row">
       <div className="col-md-6">
@@ -48,6 +50,6 @@ function Legenda(props) {
       </div>
     </div>
   );
-}
+};
 
 export default Legenda;

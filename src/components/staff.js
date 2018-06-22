@@ -2,6 +2,8 @@ import React from "react";
 import { renderList } from "./renderList";
 import StaffCard from "./staffCard";
 
+// Secondary Staff page - Renders user cards
+
 const Staff = props => {
   const renderCards = props.articles.map(article => (
     <StaffCard key={article.id} {...props} />

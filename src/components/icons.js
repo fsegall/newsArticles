@@ -1,5 +1,7 @@
 import React from "react";
 
+// Renders fontawesome icons inside article items
+
 const IconList = ({ iconList }) => {
   return (
     <React.Fragment>
