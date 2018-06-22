@@ -44,7 +44,7 @@ class StatusBar extends Component {
               }
             >
               <div className={!hidden ? "fade" : "d-none"}>
-                <p className="">Total</p>
+                <p className="bg-dark rounded">Total</p>
                 <div className="">{articlesTotal}</div>
               </div>
             </div>
@@ -55,7 +55,7 @@ class StatusBar extends Component {
               }
             >
               <div className={!hidden ? "fade" : "d-none"}>
-                <p className="">Private</p>
+                <p className="bg-secondary rounded">Private</p>
                 <div>{this.props.articlesPrivate}</div>
               </div>
             </div>
@@ -66,7 +66,7 @@ class StatusBar extends Component {
               }
             >
               <div className={!hidden ? "fade" : "d-none"}>
-                <p className="">Edit</p>
+                <p className="bg-secondary rounded">Edit</p>
                 <div className="">{this.props.articlesNotReviewed}</div>
               </div>
             </div>
@@ -77,7 +77,7 @@ class StatusBar extends Component {
               }
             >
               <div className={!hidden ? "fade" : "d-none"}>
-                <p className="">Reviewed</p>
+                <p className="bg-secondary rounded">Reviewed</p>
                 <div className="">{this.props.articlesReviewed}</div>
               </div>
             </div>
@@ -88,7 +88,7 @@ class StatusBar extends Component {
               }
             >
               <div className={!hidden ? "fade" : "d-none"}>
-                <p className="">Published</p>
+                <p className="bg-secondary rounded">Published</p>
                 <div className="">{this.props.articlesPublished}</div>
               </div>
             </div>
