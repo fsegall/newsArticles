@@ -35,7 +35,7 @@ class StatusBar extends Component {
     return (
       <div>
         <div className="row">
-          <div className="d-flex text-white font-bold text-center col-md-6">
+          <div className="d-flex text-white text-center col-md-6">
             <div
               className={
                 !hidden

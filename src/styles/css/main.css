@@ -1,7 +1,17 @@
 body {
   background-color: rgb(228, 228, 228);
-  font-family: sans-serif;
+  font-family: Galatia SIL;
 }
+
+@font-face {
+  font-family: Galatia SIL;
+  src: url(../../fonts/GalSILR.ttf);
+}
+
+/* @font-face {
+  font-family: Galatia SIL;
+  src: url(../../fonts/GalSILB.ttf);
+} */
 
 h1 {
   color: gray;
@@ -14,10 +24,6 @@ h1 {
 
 .icons {
   margin: 1rem;
-}
-
-.font-bold {
-  font-weight: bold;
 }
 
 .box-animation {
