@@ -6,7 +6,7 @@ import StaffCard from "./staffCard";
 
 const Staff = props => {
   const renderCards = props.articles.map(article => (
-    <StaffCard key={article.id} {...props} />
+    <StaffCard key={article.id} article={article} />
   ));
   return (
     <div className="container d-flex justify-content-between flex-wrap">

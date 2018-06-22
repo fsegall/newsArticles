@@ -5,7 +5,7 @@ import { articles, workStatus } from "../data/test.json";
 import { BrowserRouter as Router, Route, Link, Switch } from "react-router-dom";
 
 import Lists from "../components/lists";
-import Legenda from "../components/legenda";
+import IconCaption from "../components/iconCaption";
 import SecondaryNav from "../components/secondaryNavBar";
 import MyArticles from "../components/myArticles";
 import Staff from "../components/staff";
@@ -55,12 +55,8 @@ class App extends Component {
                 path="/"
                 render={props => (
                   <div>
-                    <Lists
-                      {...props}
-                      articles={articles}
-                      workStatus={workStatus}
-                    />
-                    <Legenda />
+                    <Lists articles={articles} workStatus={workStatus} />
+                    <IconCaption />
                   </div>
                 )}
               />
@@ -69,23 +65,23 @@ class App extends Component {
                 path="/me"
                 render={props => (
                   <div>
-                    <MyArticles {...props} articles={myArticles} />
-                    <Legenda />
+                    <MyArticles articles={myArticles} />
+                    <IconCaption />
                   </div>
                 )}
               />
 
               <Route
                 path="/staff"
-                render={props => <Staff {...props} articles={articles} />}
+                render={props => <Staff articles={articles} />}
               />
 
               <Route
                 path="/locked"
                 render={props => (
                   <div>
-                    <Locked {...props} articles={lockedArticles} />
-                    <Legenda />
+                    <Locked articles={lockedArticles} />
+                    <IconCaption />
                   </div>
                 )}
               />

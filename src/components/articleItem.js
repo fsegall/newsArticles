@@ -19,7 +19,7 @@ const ArticleItem = props => {
       <div className="m-2">
         <a>{article.headline}</a>
       </div>
-      <strong className="ml-2">{`Escrita por: ${article.author}`}</strong>
+      <strong className="ml-2">{`Written by: ${article.author}`}</strong>
       <LockedIcon locked={article.locker.locked} user={article.locker.user} />
     </li>
   );
