@@ -62,7 +62,7 @@ box {
     height: 1rem;
   }
   to {
-    height: 5rem;
+    height: 5.5rem;
   }
 }
 
@@ -96,4 +96,9 @@ box {
   width: 100px;
   height: 100px;
   margin: auto;
+}
+
+.rad {
+  height: 2rem;
+  width: 2rem;
 }

@@ -1,4 +1,5 @@
 import React, { Component } from "react";
+import StatusBox from "./statusBox";
 
 //Renders a colored status bar for news articles with list item counters
 
@@ -45,53 +46,39 @@ class StatusBar extends Component {
             >
               <div className={!hidden ? "fade" : "d-none"}>
                 <p className="bg-dark rounded">Total</p>
-                <div className="">{articlesTotal}</div>
+                <div className="bg-dark rounded-circle p-1 rad m-auto">
+                  {articlesTotal}
+                </div>
               </div>
             </div>
 
-            <div
-              className={
-                !hidden ? "bg-danger box-animation p-2" : "bg-danger box px-5"
-              }
-            >
-              <div className={!hidden ? "fade" : "d-none"}>
-                <p className="bg-secondary rounded">Private</p>
-                <div>{this.props.articlesPrivate}</div>
-              </div>
-            </div>
+            <StatusBox
+              statusStage="Private"
+              statusClass="bg-danger"
+              hidden={this.state.hidden}
+              count={this.props.articlesPrivate}
+            />
 
-            <div
-              className={
-                !hidden ? "bg-warning box-animation p-2" : "bg-warning box px-5"
-              }
-            >
-              <div className={!hidden ? "fade" : "d-none"}>
-                <p className="bg-secondary rounded">Edit</p>
-                <div className="">{this.props.articlesNotReviewed}</div>
-              </div>
-            </div>
+            <StatusBox
+              statusStage="Edit"
+              statusClass="bg-warning"
+              hidden={this.state.hidden}
+              count={this.props.articlesNotReviewed}
+            />
 
-            <div
-              className={
-                !hidden ? "bg-success box-animation p-2" : "bg-success box px-5"
-              }
-            >
-              <div className={!hidden ? "fade" : "d-none"}>
-                <p className="bg-secondary rounded">Reviewed</p>
-                <div className="">{this.props.articlesReviewed}</div>
-              </div>
-            </div>
+            <StatusBox
+              statusStage="Reviewed"
+              statusClass="bg-success"
+              hidden={this.state.hidden}
+              count={this.props.articlesReviewed}
+            />
 
-            <div
-              className={
-                !hidden ? "bg-primary box-animation p-2" : "bg-primary box px-5"
-              }
-            >
-              <div className={!hidden ? "fade" : "d-none"}>
-                <p className="bg-secondary rounded">Published</p>
-                <div className="">{this.props.articlesPublished}</div>
-              </div>
-            </div>
+            <StatusBox
+              statusStage="Published"
+              statusClass="bg-primary"
+              hidden={this.state.hidden}
+              count={this.props.articlesPublished}
+            />
 
             <span
               onClick={e => this.onClick(e)}
