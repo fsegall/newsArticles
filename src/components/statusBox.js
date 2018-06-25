@@ -2,6 +2,7 @@ import React from "react";
 
 const StatusBox = props => {
   const statusClass = props.statusClass;
+  const bgClass = props.bgClass;
   return (
     <div
       className={
@@ -11,8 +12,12 @@ const StatusBox = props => {
       }
     >
       <div className={!props.hidden ? "fade" : "d-none"}>
-        <p className="bg-light text-secondary rounded">{props.statusStage}</p>
-        <div className="bg-light rounded-circle p-1 text-secondary rad m-auto">
+        <p className={`${bgClass} text-secondary rounded`}>
+          {props.statusStage}
+        </p>
+        <div
+          className={`${bgClass} rounded-circle p-1 text-secondary rad m-auto`}
+        >
           {props.count}
         </div>
       </div>

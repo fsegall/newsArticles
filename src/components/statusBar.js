@@ -37,22 +37,16 @@ class StatusBar extends Component {
       <div>
         <div className="row">
           <div className="d-flex text-white text-center col-md-6">
-            <div
-              className={
-                !hidden
-                  ? "bg-secondary box-animation p-2"
-                  : "bg-secondary box px-5"
-              }
-            >
-              <div className={!hidden ? "fade" : "d-none"}>
-                <p className="bg-dark rounded">Total</p>
-                <div className="bg-dark rounded-circle p-1 rad m-auto">
-                  {articlesTotal}
-                </div>
-              </div>
-            </div>
+            <StatusBox
+              bgClass="bg-light"
+              statusStage="Total"
+              statusClass="bg-secondary"
+              hidden={this.state.hidden}
+              count={articlesTotal}
+            />
 
             <StatusBox
+              bgClass="bg-light"
               statusStage="Private"
               statusClass="bg-danger"
               hidden={this.state.hidden}
@@ -60,6 +54,7 @@ class StatusBar extends Component {
             />
 
             <StatusBox
+              bgClass="bg-light"
               statusStage="Edit"
               statusClass="bg-warning"
               hidden={this.state.hidden}
@@ -67,6 +62,7 @@ class StatusBar extends Component {
             />
 
             <StatusBox
+              bgClass="bg-light"
               statusStage="Reviewed"
               statusClass="bg-success"
               hidden={this.state.hidden}
@@ -74,6 +70,7 @@ class StatusBar extends Component {
             />
 
             <StatusBox
+              bgClass="bg-light"
               statusStage="Published"
               statusClass="bg-primary"
               hidden={this.state.hidden}
