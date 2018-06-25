@@ -21,7 +21,7 @@ const ListContent = props => {
       bg = "bg-primary";
       break;
     default:
-      bg = "";
+      bg = "bg-secondary";
   }
 
   return (
