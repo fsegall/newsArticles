@@ -8,8 +8,11 @@ export const renderList = (status, filterList) => {
     <ArticleItem key={article.id} article={article} />
   ));
 
+  const senadoAgora = filterList.filter(article => article.senadoAgora);
+
   return (
     <ListContent
+      senadoAgora={senadoAgora}
       status={status}
       populateList={
         renderListData

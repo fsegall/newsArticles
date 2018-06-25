@@ -23,13 +23,13 @@
       },
       "home": false,
       "publishDate": "01/03/2018 - 13h43",
-      "private": true,
+      "private": false,
       "reviewed": false
     },
     {
       "id": 1,
       "author": "Joana Silva",
-      "senadoAgora": false,
+      "senadoAgora": true,
       "headline":
         "CDR aprova Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus faucibus nec neque vitae fermentum. Nunc dignissim orci magna, in efficitur eros volutpat et.",
       "article-images": "",
@@ -49,7 +49,7 @@
       },
       "home": false,
       "publishDate": null,
-      "private": false,
+      "private": true,
       "reviewed": true
     },
     {

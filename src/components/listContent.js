@@ -4,7 +4,7 @@ import React from "react";
 
 const ListContent = props => {
   let articleStatus = props.status;
-  console.log(props.status);
+  console.log(props.populateList.length);
   let bg;
 
   switch (articleStatus) {
@@ -26,10 +26,18 @@ const ListContent = props => {
 
   return (
     <div className="pt-3 mb-2 border border-secondary border-white border-bottom-0 rounded">
+      <div className="badge bg-secondary mx-2 p-2 float-right">
+        Matérias: {props.populateList.length - props.senadoAgora.length}
+      </div>
+      <div className="badge bg-light text-secondary mx-2 p-2 float-right">
+        Agora: {props.senadoAgora.length}
+      </div>
+
       <h1 className="ml-2">
         {props.status}
-
-        <span className={`badge ${bg} float-right text-light mr-2`}>
+        <span
+          className={`badge ${bg} float-right text-light mr-2 animated rubberBand`}
+        >
           {props.populateList.length}
         </span>
       </h1>
