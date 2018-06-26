@@ -25,24 +25,25 @@ const ListContent = props => {
   }
 
   return (
-    <div className="pt-3 mb-2 border border-secondary border-white border-bottom-0 rounded">
-      <div className="badge bg-secondary mx-2 p-2 float-right">
+    <div className="p-1">
+      <div className="badge bg-secondary mb-2">
         Matérias: {props.populateList.length - props.senadoAgora.length}
       </div>
-      <div className="badge bg-light text-secondary mx-2 p-2 float-right">
+      <div className="badge bg-light text-secondary mb-2 ml-2">
         Agora: {props.senadoAgora.length}
       </div>
-
-      <h1 className="ml-2">
-        {props.status}
-        <span
-          className={`badge ${bg} float-right text-light mr-2 animated rubberBand`}
-        >
-          {props.populateList.length}
-        </span>
-      </h1>
-
-      <ul className="list-group mb-5">{props.populateList}</ul>
+      <div className="border border-secondary border-white border-bottom-0 rounded">
+        <h4 className="ml-2">
+          {props.status}
+          <span
+            className={`badge ${bg} float-right text-light m-1 animated rubberBand`}
+          >
+            {props.populateList.length}
+          </span>
+        </h4>
+        <div />
+        <ul className="list-group">{props.populateList}</ul>
+      </div>
     </div>
   );
 };

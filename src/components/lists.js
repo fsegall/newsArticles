@@ -28,17 +28,25 @@ const Lists = props => {
   const articlesPublished = publishList.length;
 
   return (
-    <div>
-      <StatusBar
-        articlesPrivate={articlesPrivate}
-        articlesNotReviewed={articlesNotReviewed}
-        articlesReviewed={articlesReviewed}
-        articlesPublished={articlesPublished}
-      />
-      {renderList(statusPrivate, privateList)}
-      {renderList(statusReview, reviewList)}
-      {renderList(statusReviewed, reviewedList)}
-      {renderList(statusPublish, publishList)}
+    <div className="container-fluid">
+      <div className="row">
+        <div col-md-12>
+          <StatusBar
+            articlesPrivate={articlesPrivate}
+            articlesNotReviewed={articlesNotReviewed}
+            articlesReviewed={articlesReviewed}
+            articlesPublished={articlesPublished}
+          />
+        </div>
+      </div>
+      <div className="row no-gutters">
+        <div className="col-lg-3">{renderList(statusPrivate, privateList)}</div>
+        <div className="col-lg-3">{renderList(statusReview, reviewList)}</div>
+        <div className="col-lg-3">
+          {renderList(statusReviewed, reviewedList)}
+        </div>
+        <div className="col-lg-3">{renderList(statusPublish, publishList)}</div>
+      </div>
     </div>
   );
 };

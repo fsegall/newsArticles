@@ -34,58 +34,56 @@ class StatusBar extends Component {
     const hidden = this.state.hidden;
 
     return (
-      <div>
-        <div className="row">
-          <div className="d-flex text-white text-center col-md-6">
-            <StatusBox
-              bgClass="bg-light"
-              statusStage="Total"
-              statusClass="bg-secondary"
-              hidden={this.state.hidden}
-              count={articlesTotal}
-            />
+      <div className="ml-4 mb-5">
+        <div className="d-flex text-white text-center">
+          <StatusBox
+            bgClass="bg-light"
+            statusStage="Total"
+            statusClass="bg-secondary"
+            hidden={this.state.hidden}
+            count={articlesTotal}
+          />
 
-            <StatusBox
-              bgClass="bg-light"
-              statusStage="Private"
-              statusClass="bg-danger"
-              hidden={this.state.hidden}
-              count={this.props.articlesPrivate}
-            />
+          <StatusBox
+            bgClass="bg-light"
+            statusStage="Private"
+            statusClass="bg-danger"
+            hidden={this.state.hidden}
+            count={this.props.articlesPrivate}
+          />
 
-            <StatusBox
-              bgClass="bg-light"
-              statusStage="Edit"
-              statusClass="bg-warning"
-              hidden={this.state.hidden}
-              count={this.props.articlesNotReviewed}
-            />
+          <StatusBox
+            bgClass="bg-light"
+            statusStage="Edit"
+            statusClass="bg-warning"
+            hidden={this.state.hidden}
+            count={this.props.articlesNotReviewed}
+          />
 
-            <StatusBox
-              bgClass="bg-light"
-              statusStage="Reviewed"
-              statusClass="bg-success"
-              hidden={this.state.hidden}
-              count={this.props.articlesReviewed}
-            />
+          <StatusBox
+            bgClass="bg-light"
+            statusStage="Reviewed"
+            statusClass="bg-success"
+            hidden={this.state.hidden}
+            count={this.props.articlesReviewed}
+          />
 
-            <StatusBox
-              bgClass="bg-light"
-              statusStage="Published"
-              statusClass="bg-primary"
-              hidden={this.state.hidden}
-              count={this.props.articlesPublished}
-            />
+          <StatusBox
+            bgClass="bg-light"
+            statusStage="Published"
+            statusClass="bg-primary"
+            hidden={this.state.hidden}
+            count={this.props.articlesPublished}
+          />
 
-            <span
-              onClick={e => this.onClick(e)}
-              className={
-                this.state.extended
-                  ? "fas fa-minus-circle text-secondary ml-2"
-                  : "fas fa-plus-circle text-secondary ml-2"
-              }
-            />
-          </div>
+          <span
+            onClick={e => this.onClick(e)}
+            className={
+              this.state.extended
+                ? "fas fa-minus-circle text-secondary ml-2 pt-1"
+                : "fas fa-plus-circle text-secondary ml-2 pt-1"
+            }
+          />
         </div>
       </div>
     );

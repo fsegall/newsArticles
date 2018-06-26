@@ -13,11 +13,13 @@ const ArticleItem = props => {
   return (
     <li className="list-group-item list-group-item-action">
       <Icons iconList={article.icons} />
-      <span className={classAnimated}>
-        <span className="">{article.publishDate}</span>
-      </span>
       <div className="m-2">
-        <a>{article.headline}</a>
+        <div className={classAnimated}>
+          <span className="">{article.publishDate}</span>
+        </div>
+        <div className="pt-4">
+          <a>{article.headline}</a>
+        </div>
       </div>
       <strong className="ml-2">{`Written by: ${article.author}`}</strong>
       <LockedIcon locked={article.locker.locked} user={article.locker.user} />
