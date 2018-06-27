@@ -8,7 +8,7 @@ const IconList = ({ iconList }) => {
       {Object.keys(iconList)
         .filter(k => iconList[k] !== "")
         .map((k, i) => (
-          <span key={i} className={`mx-2 text-secondary ${iconList[k]}`} />
+          <span key={i} className={`mr-2 text-secondary ${iconList[k]}`} />
         ))}
     </React.Fragment>
   );

@@ -6,26 +6,26 @@
       "createdAt": "01/03/2018 - 10h",
       "senadoAgora": true,
       "headline":
-        "Pedro I criou Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus faucibus nec neque vitae fermentum. Nunc dignissim orci magna, in efficitur eros volutpat et.",
+        "1/1 Pedro I criou Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus faucibus nec neque vitae fermentum. Nunc dignissim orci magna, in efficitur eros volutpat et.",
       "article-images": "",
       "locker": {
         "locked": false,
         "user": "Pedro"
       },
       "icons": {
-        "image": "",
+        "image": "fas fa-image",
         "image-caption": "fas fa-comment-alt",
         "video": "",
-        "audio": "fas fa-volume-up",
+        "audio": "",
         "infografico": "",
         "infomateria": "",
         "eCidadania": "",
-        "home": "fas fa-home"
+        "home": ""
       },
       "home": false,
       "publishDate": "01/03/2018 - 13h43",
       "private": false,
-      "reviewed": false
+      "reviewed": true
     },
     {
       "id": 1,

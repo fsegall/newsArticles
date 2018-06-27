@@ -12,7 +12,6 @@ const ArticleItem = props => {
 
   return (
     <li className="list-group-item list-group-item-action">
-      <Icons iconList={article.icons} />
       <div className="m-2">
         <div className={classAnimated}>
           <span className="">
@@ -20,6 +19,7 @@ const ArticleItem = props => {
           </span>
         </div>
         <div className="pt-4">
+          <Icons iconList={article.icons} />
           <a>{article.headline}</a>
         </div>
       </div>
