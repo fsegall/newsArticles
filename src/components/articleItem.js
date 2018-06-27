@@ -8,14 +8,16 @@ const ArticleItem = props => {
   const article = props.article;
   const classAnimated = article.publishDate
     ? "badge badge-primary float-right animated slideInRight"
-    : "";
+    : "badge bg-secondary float-left animated slideInLeft";
 
   return (
     <li className="list-group-item list-group-item-action">
       <Icons iconList={article.icons} />
       <div className="m-2">
         <div className={classAnimated}>
-          <span className="">{article.publishDate}</span>
+          <span className="">
+            {article.publishDate ? article.publishDate : article.createdAt}
+          </span>
         </div>
         <div className="pt-4">
           <a>{article.headline}</a>
