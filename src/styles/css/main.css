@@ -1,18 +1,13 @@
 body {
   background-color: rgb(228, 228, 228);
-  font-family: Galatia SIL;
+  font-family: "DroidSerif";
 }
 
 @font-face {
-  font-family: Galatia SIL;
-  src: url(../../fonts/GalSILR.ttf);
+  font-family: "DroidSerif";
+  src: url("../../fonts/DroidSerif-Regular-webfont.woff") format("woff"),
+    url("../../fonts/DroidSerif-Regular-webfont.woff") format("woff");
 }
-
-/* @font-face {
-  font-family: Galatia SIL;
-  src: url(../../fonts/GalSILB.ttf);
-} */
-
 h4 {
   color: gray;
 }

@@ -25,6 +25,9 @@ const ArticleItem = props => {
       </div>
       <strong className="ml-2">{`Written by: ${article.author}`}</strong>
       <LockedIcon locked={article.locker.locked} user={article.locker.user} />
+      <small className={article.publishDate ? "" : "d-none"}>
+        {`Created at: ${article.createdAt}`}
+      </small>
     </li>
   );
 };
