@@ -80,8 +80,8 @@ class StatusBar extends Component {
             onClick={e => this.onClick(e)}
             className={
               this.state.extended
-                ? "fas fa-minus-circle text-secondary ml-2 pt-1"
-                : "fas fa-plus-circle text-secondary ml-2 pt-1"
+                ? "fas fa-minus-circle text-secondary ml-2"
+                : "fas fa-plus-circle text-secondary ml-2"
             }
           />
         </div>
