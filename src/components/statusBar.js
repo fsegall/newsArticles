@@ -34,7 +34,7 @@ class StatusBar extends Component {
     const hidden = this.state.hidden;
 
     return (
-      <div className="ml-4 mb-5">
+      <div className="ml-4">
         <div className="d-flex text-white text-center">
           <StatusBox
             bgClass="bg-light"
