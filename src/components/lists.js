@@ -39,7 +39,7 @@ const Lists = props => {
           />
         </div>
       </div>
-      <div className="border-top border-light pt-3 row no-gutters">
+      <div className="pt-3 row no-gutters">
         <div className="col-lg-3">{renderList(statusPrivate, privateList)}</div>
         <div className="col-lg-3">{renderList(statusReview, reviewList)}</div>
         <div className="col-lg-3">
