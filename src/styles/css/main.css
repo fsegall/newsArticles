@@ -1,3 +1,5 @@
+/* General and fonts */
+
 body {
   background-color: rgb(228, 228, 228);
   font-family: "DroidSerif";
@@ -8,18 +10,32 @@ body {
   src: url("../../fonts/DroidSerif-Regular-webfont.woff") format("woff"),
     url("../../fonts/DroidSerif-Regular-webfont.woff") format("woff");
 }
-h4 {
-  color: gray;
-}
+
+/* Logo placeholder */
 
 .ItIsaFont {
   font-size: 2rem;
   text-align: center;
 }
 
+.home a {
+  color: gray;
+  text-decoration: none;
+}
+
+/* Status list titles */
+
+.status h4 {
+  color: gray;
+}
+
+/* Article icons */
+
 .icons {
   margin: 1rem;
 }
+
+/* StatusBar component and animation */
 
 .box-animation {
   flex: 1;
@@ -34,6 +50,11 @@ box {
   flex: 1;
   border-radius: 0.3em;
   width: 6rem;
+}
+
+.rad {
+  height: 2rem;
+  width: 2rem;
 }
 
 /* .box-reverse {
@@ -71,14 +92,19 @@ box {
   }
 }
 
+/* lockedIcon */
 .unbutton {
   border: none;
 }
 
-.home a {
-  color: gray;
-  text-decoration: none;
+/* StaffCard avatar */
+.avatar {
+  width: 100px;
+  height: 100px;
+  margin: auto;
 }
+
+/* Button style and Grid Container for secondaryNavBar component */
 
 .links a:hover {
   text-decoration: none;
@@ -88,13 +114,22 @@ box {
   color: white;
 }
 
-.avatar {
-  width: 100px;
-  height: 100px;
-  margin: auto;
+.grid-container {
+  display: grid;
+  grid-template-columns: repeat(6, 1fr);
 }
 
-.rad {
-  height: 2rem;
-  width: 2rem;
+.grid-item1 {
+  columns: span 1;
+  grid-column-start: 4;
+}
+
+.grid-item2 {
+  columns: span 1;
+  grid-column-start: 5;
+}
+
+.grid-item3 {
+  columns: span 1;
+  grid-column-start: 6;
 }

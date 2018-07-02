@@ -32,7 +32,7 @@ const ListContent = props => {
       <div className="badge bg-light text-secondary mb-2 ml-2">
         Agora: {props.senadoAgora.length}
       </div>
-      <div className="border border-secondary border-white border-bottom-0 rounded">
+      <div className="status border border-secondary border-white border-bottom-0 rounded">
         <h4 className="ml-2">
           {props.status}
           <span

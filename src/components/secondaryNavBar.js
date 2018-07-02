@@ -5,7 +5,7 @@ import { Link } from "react-router-dom";
 
 const SecondaryNavBar = () => {
   return (
-    <div className="container-fluid">
+    <div className="container-fluid ">
       <div className="ItIsaFont d-inline text-secondary">
         <i class="fab fa-earlybirds" />
       </div>
@@ -13,14 +13,14 @@ const SecondaryNavBar = () => {
         <Link to="/">News Workflow</Link>
       </h1>
       <nav className="text-right">
-        <ul className="links">
-          <li className="btn btn-default m-1">
+        <ul className="links grid-container">
+          <li className="btn btn-default m-1 grid-item1">
             <Link to="/me">My Articles</Link>
           </li>
-          <li className="btn btn-default m-1">
+          <li className="btn btn-default m-1 grid-item2">
             <Link to="/staff">Staff</Link>
           </li>
-          <li className="btn btn-warning m-1">
+          <li className="btn btn-warning m-1 grid-item3">
             <Link to="/locked">Locked</Link>
           </li>
         </ul>
