@@ -93,11 +93,13 @@ box {
 }
 
 /* lockedIcon */
+
 .unbutton {
   border: none;
 }
 
 /* StaffCard avatar */
+
 .avatar {
   width: 100px;
   height: 100px;
