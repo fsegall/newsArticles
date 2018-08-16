@@ -25,5 +25,4 @@ axios
   })
   .catch(err => console.log(err));
 
-console.log();
 ReactDOM.render(<App />, document.getElementById("app"));
