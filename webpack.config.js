@@ -61,5 +61,12 @@ module.exports = {
       filename: devMode ? "[name].css" : "[name].[hash].css",
       chunkFilename: devMode ? "[id].css" : "[id].[hash].css"
     })
-  ]
+  ],
+  devServer: {
+    allowedHosts: [
+      "localhost:8080",
+      "MD1741.senado.gov.br",
+      "MD1741.senado.leg.br"
+    ]
+  }
 };

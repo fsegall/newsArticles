@@ -12,6 +12,7 @@ import Staff from "../components/staff";
 import Locked from "../components/locked";
 
 // Main component with route to all pages
+/* @hot(module); */
 
 class App extends Component {
   constructor(props) {
