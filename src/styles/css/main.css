@@ -92,6 +92,16 @@ box {
   }
 }
 
+/* Search bar */
+
+.searchTitle {
+  padding: 1rem;
+  background-color: #ccc;
+  display: flex;
+  align-items: center;
+  color: gray;
+}
+
 /* lockedIcon */
 
 .unbutton {
