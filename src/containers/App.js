@@ -21,22 +21,25 @@ class App extends Component {
       articles,
       workStatus
     };
-    // Update state
-    // JSON request to backend goes here
-    /*     fetch("articlesURL")
-      .then(response => {
-        this.setState({
-          articles: JSON.parse(response.articles),
-          workStatus: JSON.parse(response.workStatus)
-        });
-      })
-      .catch(err => console.log(err));
-  } */
-
-    /*   getArticlesStats = (articleNumbers) => {
-    return articleNumbers;
-*/
   }
+
+  /*   componentDidMount() {
+      // Update state
+      // JSON request to backend goes here
+      fetch("articlesURL")
+        .then(response => {
+          this.setState({
+            articles: JSON.parse(response.articles),
+            workStatus: JSON.parse(response.workStatus)
+          });
+        })
+        .catch(err => console.log(err));
+    }  */
+
+  /*   getArticlesStats = (articleNumbers) => {
+      return articleNumbers;
+  
+    } */
 
   render() {
     const articles = this.state.articles;

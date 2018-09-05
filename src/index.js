@@ -18,11 +18,11 @@ import App from "./containers/App";
 
 //App
 
-axios
+/* axios
   .get("http://localhost:8080/dados")
   .then(res => {
     console.log(res);
   })
-  .catch(err => console.log(err));
+  .catch(err => console.log(err)); */
 
 ReactDOM.render(<App />, document.getElementById("app"));
